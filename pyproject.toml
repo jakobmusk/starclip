@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starclip"
+version = "0.1.0"
+description = "Local short-form editor: cut clips to a storyboard and render them with ffmpeg."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Jakob Musk" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+starclip = "starclip.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

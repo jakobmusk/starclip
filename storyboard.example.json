@@ -1,0 +1,17 @@
+{
+  "output": "renders/example.mp4",
+  "clips": [
+    {
+      "file": "clips/example1.mp4",
+      "in": 0.0,
+      "out": 3.0,
+      "caption": "Hook"
+    },
+    {
+      "file": "clips/example2.mp4",
+      "in": 1.0,
+      "out": 4.5,
+      "caption": "Payoff"
+    }
+  ]
+}
